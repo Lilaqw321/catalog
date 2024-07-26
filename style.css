@@ -1,0 +1,130 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Hacemos que el cuerpo sea un contenedor flex */
+    flex-direction: column; /* Establecemos la dirección de los elementos como columna */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    background-image: url(Imagenes/violet.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    }
+
+
+
+h1 {
+    font-family: sans-serif;
+    color: white;
+    text-shadow: #000000;
+    border-bottom: 3px solid white;
+    border-radius: 5px;
+}
+
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lila {
+    width: 200px; /* Ajusta el ancho según tu imagen */
+    height: auto;
+    margin-top: 20px; /* Margen superior para separar la imagen del encabezado */
+    }
+
+/* Estilos para cada producto */
+.producto {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(233, 155, 233);
+    border-radius: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(Imagenes/lila12.jpg);
+}
+
+.video3 {
+    width: auto;
+    margin: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(233, 155, 233);
+    border-radius: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(Imagenes/lila12.jpg);
+    margin-top: 50px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Estilos para las imágenes */
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+/* Estilos para los títulos y precios */
+.producto h2 {
+    margin: 10px 0;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Fija el modal en la pantalla */
+    z-index: 1; /* Asegura que el modal esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite desplazar el contenido si es necesario */
+    background-color: rgba(0,0,0,0.9); /* Fondo oscuro semi-transparente */
+  }
+  
+  .modal-content {
+    margin: 15% auto; /* Centra el contenido del modal */
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f00;
+    cursor: pointer;
+  }
+
