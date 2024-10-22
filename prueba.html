@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prueba.css">
+    <title>Contenido</title>
+    <script src="menu.js" defer></script> <!-- Enlace al archivo de menú -->
+    <script>
+        window.onload = function() {
+            // Obtener el parámetro 'permiso' de la URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var permiso = parseInt(urlParams.get('permiso'));
+
+            // Mostrar u ocultar secciones basado en el permiso del usuario
+            if (permiso === 1) {
+                // Mostrar contenido solo para administradores (permiso 1)
+                document.getElementById("adminContent").style.display = "block";
+                document.getElementById("pageContent").style.display = "block";
+            } else if (permiso === 2) {
+                // Mostrar contenido para dueños (permiso 2), que incluye el contenido de administradores
+                document.getElementById("adminContent").style.display = "block";
+                document.getElementById("pageContent").style.display = "block";
+                document.getElementById("ownerContent").style.display = "block";
+            }
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Contenido visible para admin y owner -->
+    <button id="adminContent" class="buttonfab" style="display:none;">
+        <h2>Fabrica</h2>
+    </button>
+
+    <button id="pageContent" class="buttonpag" style="display:none;">
+        <h2>Página</h2>
+    </button>
+    </div>
+    
+</body>
+</html>

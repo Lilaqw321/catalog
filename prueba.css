@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto_Condensed/static/RobotoCondensed-Black.ttf);
+}
+body {
+    background-color: rgb(20, 19, 19);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto";
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vh;
+    gap: 40px;
+    font-size: 20px;
+}
+
+button {
+    align-content: center;
+    text-align: center;
+    height: 150px;
+    width: 300px;
+    color: white;
+    background-color: gray;
+    background-color: rgb(37, 35, 35);
+    border-radius: 5px;
+    box-shadow: 0 0 15px violet;
+}
